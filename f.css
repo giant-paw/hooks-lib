@@ -61,7 +61,7 @@ body {
 /* Setelah Navbar */
 
 .f-title {
-    margin-top: 120px; /* Sesuaikan margin-top sesuai kebutuhan */
+    margin-top: 108px; /* Sesuaikan margin-top sesuai kebutuhan */
     text-align: center;
 }
 
@@ -109,4 +109,26 @@ body {
 
 .featured-books .featured-book-box .featured-book-card .featured-book-img img {
     width: 150px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .h2 {
+    margin: 12px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .writer {
+    color: #706969;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .categories {
+    color: #0eaaaf;
+    margin-top: 8px;
+    margin-bottom: 29px;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .f-btn {
+    padding: 8px 5px;
+    border: 2px solid rgb(216, 17, 123);
+    border-radius: 14px;
+    text-decoration: none;
+    color: #000;
 }
