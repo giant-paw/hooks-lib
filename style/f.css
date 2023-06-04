@@ -99,11 +99,13 @@ body {
     height: 420px;
     text-align: center;
     border: 1px solid #919191;
+    border-radius: 30px;
     padding: 17px;
     margin: 10px;
 }
 
 .featured-books .featured-book-box .featured-book-card:hover {
+    transform: translateY(-15px);
     box-shadow: 0 0 5px #089da1;
 }
 
@@ -131,4 +133,8 @@ body {
     border-radius: 14px;
     text-decoration: none;
     color: #000;
+}
+
+.featured-books .featured-book-box .featured-book-card .featured-book-tag .f-btn:hover {
+    border-color: #089da1;
 }
