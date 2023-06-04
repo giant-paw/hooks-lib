@@ -1,24 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Writer</title>
-    <link rel="stylesheet" href="style/style.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
         rel="stylesheet" />
+    <!-- Custom CSS -->
+    <style>
+        /* Your custom CSS styles here */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
 
-    <!-- Feather Icons -->
-    <script src="https://unpkg.com/feather-icons"></script>
+        body {
+            font-family: "Poppins", sans-serif;
+            height: 100vh;
+            align-items: center;
+        }
 
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 1rem;
+            position: fixed;
+            background: #fff;
+            box-shadow: 0 0 10px #089da1;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+        .navbar-logo {
+            padding-left: 32px;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .navbar-logo span {
+            color: deeppink;
+        }
+
+        .navbar .navbar-nav a {
+            font-family: sans-serif;
+            font-weight: 450;
+            margin: 0 1rem;
+            font-size: 1.3rem;
+            color: #000;
+            display: inline-block;
+        }
+
+        .navbar .navbar-nav a:hover {
+            color: #089da1;
+        }
+
+        .navbar .navbar-extra a {
+            color: #000;
+            margin: 0 0.5rem;
+            padding-right: 10px;
+        }
+
+        .navbar .navbar-extra a:hover {
+            color: #089da1;
+        }
+
+        .w-title {
+            text-align: center;
+            margin-top: 116px;
+            font-size: 32px;
+            color: #000;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            width: 280px;
+            height: 280px;
+            margin: 20px;
+            box-shadow: 5px 5px 20px black;
+            border-radius: 40px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        img {
+            height: 280px;
+            width: 280px;
+            border-radius: 40px;
+            filter: brightness(80%);
+        }
+        
+        .intro {
+            height: 70px;
+            width: 280px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 1px;
+            background: rgba(2, 0, 0, 0.747);
+            color: white;
+            transition: .5s;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 9px;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 11.5px;
+            margin: 10px;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        span {
+            font-weight: bold;
+        }
+
+        .card:hover {
+            cursor: pointer;
+            box-shadow: 5px 5px 20px #089da1;
+        }
+
+        .card:hover .intro {
+            height: 190px;
+            bottom: 1px;
+            background: black;
+        }
+
+        .card:hover p {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .card:hover img {
+            transform: scale(1.1) rotate(-1deg);
+        }
+    </style>
 </head>
-<body>
 
+<body>
     <!-- Navbar -->
     <nav class="navbar">
         <a href="index.html" class="navbar-logo">Hooks <span>Library</span></a>
@@ -36,8 +176,47 @@
             <a href="index.html" id="user"><i data-feather="user"></i></a>
         </div>
     </nav>
-    
-    <!-- Navbar -->
 
+    <h2 class="w-title">Best Writers</h2>
+
+    <div class="container">
+        <!-- Writer 1 -->
+        <div class="card">
+            <img src="src/writer/matsko.jpg">
+            <div class="intro">
+                <h1>Vladimir Sorokin</h1>
+                <p>
+                    <span>Vladimir Sorokin</span> adalah seorang penulis terkenal asal Rusia yang dikenal dengan karya-karyanya yang kontroversial dan eksperimental. Ia lahir pada tahun 1955 dan memulai karirnya sebagai penyair sebelum beralih menjadi penulis fiksi.
+                </p>
+            </div>
+        </div>
+
+        <!-- Writer 2 -->
+        <div class="card">
+            <img src="src/writer/angela.jpg">
+            <div class="intro">
+                <h1>Angela Duckworth</h1>
+                <p>
+                    <span>Angela Duckworth</span> adalah seorang psikolog dan penulis yang terkenal dengan penelitiannya
+                    tentang konsep "grit" atau ketekunan. Ia merupakan penulis buku berjudul "Grit" yang terbit pada
+                    tahun 2016.
+                </p>
+            </div>
+        </div>
+
+        <!-- Writer 3 -->
+        <div class="card">
+            <img src="src/writer/charles.jpg">
+            <div class="intro">
+                <h1>Charles Duhigg</h1>
+                <p>
+                    <span>Charles Duhigg</span> adalah seorang penulis dan jurnalis Amerika yang dikenal karyanya
+                    tentang penelitian perilaku manusia dan kebiasaan. Bukunya yang terkenal adalah "The Power of
+                    Habit"..
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
