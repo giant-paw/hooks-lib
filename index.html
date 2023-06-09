@@ -179,7 +179,7 @@
             margin-top: 10px;
         }
 
-        .koleksi-title {
+        .sect-title {
             font-size: 20px;
             color: whitesmoke;
             font-family: "Poppins";
@@ -187,80 +187,6 @@
             /* Sesuaikan margin-top sesuai kebutuhan */
             text-align: center;
             background-color: #ce5959;
-        }
-
-        .featured-books {
-            width: 100%;
-            height: 500px;
-            /* Sesuaikan tinggi sesuai kebutuhan */
-            padding: 20px 0;
-            overflow-x: auto;
-            overflow-y: hidden;
-            white-space: nowrap;
-        }
-
-        .featured-books .featured-book-box {
-            display: inline-block;
-            width: 200px;
-            /* Sesuaikan lebar box dengan ukuran buku */
-            height: 350px;
-            /* Sesuaikan tinggi box dengan ukuran buku */
-            text-align: center;
-            padding: 10px;
-            margin: 0 10px;
-            /* Sesuaikan margin sesuai kebutuhan */
-            margin-right: 60px;
-            vertical-align: top;
-        }
-
-        .featured-books .featured-book-box:last-child {
-            margin-left: 2px;
-            /* Hapus margin-right pada elemen terakhir */
-        }
-
-        .featured-books .featured-book-box .featured-book-card {
-            width: 250px;
-            height: 430px;
-            text-align: center;
-            border: 1px solid #919191;
-            border-radius: 30px;
-            padding: 17px;
-            margin: 10px;
-        }
-
-        .featured-books .featured-book-box .featured-book-card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 0 5px #089da1;
-        }
-
-        .featured-books .featured-book-box .featured-book-card .featured-book-img img {
-            width: 150px;
-        }
-
-        .featured-books .featured-book-box .featured-book-card .featured-book-tag .h2 {
-            margin: 12px;
-        }
-
-        .featured-books .featured-book-box .featured-book-card .featured-book-tag .writer {
-            color: #706969;
-        }
-
-        .featured-books .featured-book-box .featured-book-card .featured-book-tag .categories {
-            color: #0eaaaf;
-            margin-top: 8px;
-            margin-bottom: 29px;
-        }
-
-        .featured-books .featured-book-box .featured-book-card .featured-book-tag .f-btn {
-            padding: 8px 5px;
-            border: 2px solid rgb(216, 17, 123);
-            border-radius: 14px;
-            text-decoration: none;
-            color: #000;
-        }
-
-        .featured-books .featured-book-box .featured-book-card .featured-book-tag .f-btn:hover {
-            border-color: #089da1;
         }
 
         .arrivals {
@@ -271,7 +197,7 @@
 
         .arrivals .arrivals_box {
             width: 95%;
-            margin: 0 auto;
+            margin: 63px auto;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             grid-gap: 25px 0;
@@ -292,7 +218,7 @@
 
         .arrivals .arrivals_box .arrivals_card .arrivals_image {
             width: 150px;
-            height: 220px;
+            height: 200px;
             margin: 0 auto;
             cursor: pointer;
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
@@ -312,7 +238,7 @@
         }
 
         .arrivals .arrivals_box .arrivals_card .arrivals_tag p {
-            font-family: queen of camelot;
+            font-family: "Poppins";
             font-size: 20px;
             margin: 8px 0;
         }
@@ -370,256 +296,194 @@
     <!-- Hero -->
 
     <section class="koleksi">
-        <div class="koleksi-title">
+        <div class="sect-title">
             <h1>Rekomendasi Buku</h1>
         </div>
+
+        <div class="arrivals">
+            <div class="arrivals_box">
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-1.png">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-2.png">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-3.jpg">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-4.png">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-5.jpg">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-6.jpg">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-7.jpg">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-8.jpg">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-9.jpg">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+    
+                <div class="arrivals_card">
+                    <div class="arrivals_image">
+                        <img src="src/rekomen/rekomen-10.jpg">
+                    </div>
+                    <div class="arrivals_tag">
+                        <p>JUDUL BUKU</p>
+                        <div class="arrivals_icon">
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                            <i class="fa-solid fa-star" data-feather="star"></i>
+                        </div>
+                        <a href="#" class="arrivals_btn">Learn More</a>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+
     </section>
 
-
-    <!-- Featured Books -->
-    <!-- 
-    <div>
-        <div class="featured-books">
-
-
-            <div class="featured-books-container">
-    
-                <div class="featured-book-box">
-                    <div class="featured-book-card">
-                        <div class="featured-book-img">
-                            <img src="src/featured/featured-1.jpg">
-                        </div>
-    
-                        <div class="featured-book-tag">
-                            <h2>Coffesion</h2>
-                            <p class="writer">Shichiri Nakayama</p>
-                            <div class="categories">Thriller, Mistery</div>
-                            <a href="#" class="f-btn">Read Now</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="featured-book-box">
-                    <div class="featured-book-card">
-                        <div class="featured-book-img">
-                            <img src="src/featured/featured-2.jpg">
-                        </div>
-    
-                        <div class="featured-book-tag">
-                            <h2>Kanji</h2>
-                            <p class="writer">Japan Times</p>
-                            <div class="categories">Language, Non-fiction</div>
-                            <a href="#" class="f-btn">Read Now</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="featured-book-box">
-                    <div class="featured-book-card">
-                        <div class="featured-book-img">
-                            <img src="src/featured/featured-3.jpg">
-                        </div>
-    
-                        <div class="featured-book-tag">
-                            <h2>Kambing Hitam</h2>
-                            <p class="writer">Sindhunata</p>
-                            <div class="categories">Novel, Fiction</div>
-                            <a href="#" class="f-btn">Read Now</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="featured-book-box">
-                    <div class="featured-book-card">
-                        <div class="featured-book-img">
-                            <img src="src/featured/featured-4.jpg">
-                        </div>
-    
-                        <div class="featured-book-tag">
-                            <h2>Muhammad</h2>
-                            <p class="writer">Karen Armstrong</p>
-                            <div class="categories">History, Non-fiction</div>
-                            <a href="#" class="f-btn">Read Now</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="featured-book-box">
-                    <div class="featured-book-card">
-                        <div class="featured-book-img">
-                            <img src="src/featured/featured-5.jpg">
-                        </div>
-    
-                        <div class="featured-book-tag">
-                            <h2>Conspirata</h2>
-                            <p class="writer">Robert Harris</p>
-                            <div class="categories">fiction, Novel</div>
-                            <a href="#" class="f-btn">Read Now</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="featured-book-box">
-                    <div class="featured-book-card">
-                        <div class="featured-book-img">
-                            <img src="src/featured/featured-6.jpg">
-                        </div>
-    
-                        <div class="featured-book-tag">
-                            <h2>Aristotle</h2>
-                            <p class="writer">Paul Strathern</p>
-                            <div class="categories">Non-fiction, History</div>
-                            <a href="#" class="f-btn">Read Now</a>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="featured-book-box">
-                    <div class="featured-book-card">
-                        <div class="featured-book-img">
-                            <img src="src/featured/featured-7.jpg">
-                        </div>
-    
-                        <div class="featured-book-tag">
-                            <h2>Outliers</h2>
-                            <p class="writer">Malcolm Gladwell</p>
-                            <div class="categories">Self-improvement</div>
-                            <a href="#" class="f-btn">Read Now</a>
-                        </div>
-                    </div>
-                </div>
-    
-            </div>
-    
+    <section class="top-reader">
+        <div class="sect-title">
+            <h1>PEMBACA TERATAS</h1>
         </div>
-    </div> -->
-
-    <div class="arrivals">
-        <div class="arrivals_box">
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_1.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_2.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_3.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star" data-feather="star"></i>
-                        <i class="fa-solid fa-star" data-feather="star"></i>
-                        <i class="fa-solid fa-star" data-feather="star"></i>
-                        <i class="fa-solid fa-star" data-feather="star"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_4.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_5.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_6.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-            <div class="arrivals_card">
-                <div class="arrivals_image">
-                    <img src="image/arrival_7.jpg">
-                </div>
-                <div class="arrivals_tag">
-                    <p>New Arrivals</p>
-                    <div class="arrivals_icon">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-                    <a href="#" class="arrivals_btn">Learn More</a>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-    </div>
-
+    </section>
 
     <!-- Feather Icons -->
     <script>
