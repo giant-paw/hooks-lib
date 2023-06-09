@@ -186,7 +186,7 @@
             padding: 20px 0;
             /* Sesuaikan margin-top sesuai kebutuhan */
             text-align: center;
-            background-color: #ce5959;
+            background-color: rgb(42, 42, 82);
         }
 
         .arrivals {
@@ -254,6 +254,53 @@
             text-decoration: none;
             color: #000;
         }
+
+        /* top reader */
+
+        .reader-title {
+            font-size: 20px;
+            color: whitesmoke;
+            font-family: "Poppins";
+            padding: 20px 0;
+            text-align: center;
+            background-color: rgb(42, 42, 82);
+            border-radius: 10px;
+        }
+
+        .top-reader {
+            text-align: center;
+        }
+
+        .reader-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .reader-card {
+            margin: 0 2px;
+        }
+
+        .reader-image {
+            position: relative;
+            display: inline-block;
+        }
+
+        .reader-image img {
+            width: 350px;
+            height: 450px;
+            border-radius: 10%;
+        }
+
+
+        .reader-info {
+            padding-left: 80px;
+            font-size: 30px;
+            margin-top: 2px;
+        }
+
+        .reader-name {
+            font-weight: bold;
+        }
     </style>
 
     <!-- Feather Icons -->
@@ -302,7 +349,7 @@
 
         <div class="arrivals">
             <div class="arrivals_box">
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-1.png">
@@ -319,7 +366,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-2.png">
@@ -336,7 +383,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-3.jpg">
@@ -353,7 +400,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-4.png">
@@ -370,7 +417,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-5.jpg">
@@ -387,7 +434,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-6.jpg">
@@ -404,7 +451,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-7.jpg">
@@ -421,7 +468,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-8.jpg">
@@ -438,7 +485,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-9.jpg">
@@ -455,7 +502,7 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-    
+
                 <div class="arrivals_card">
                     <div class="arrivals_image">
                         <img src="src/rekomen/rekomen-10.jpg">
@@ -472,18 +519,48 @@
                         <a href="#" class="arrivals_btn">Learn More</a>
                     </div>
                 </div>
-                
+
             </div>
-    
+
         </div>
 
     </section>
 
     <section class="top-reader">
-        <div class="sect-title">
-            <h1>PEMBACA TERATAS</h1>
+        <div class="reader-title">
+            <h1>Top Reader</h1>
+        </div>
+
+        <div class="reader-container">
+            <div class="reader-card">
+                <div class="reader-image">
+                    <img src="src/top-reader/reader-1.png">
+                </div>
+                <div class="reader-info">
+                    <p class="reader-name">Mike</p>
+                </div>
+            </div>
+
+            <div class="reader-card">
+                <div class="reader-image">
+                    <img src="src/top-reader/reader-2.png">
+                </div>
+                <div class="reader-info">
+                    <p class="reader-name">Smith</p>
+                </div>
+            </div>
+
+            <div class="reader-card">
+                <div class="reader-image">
+                    <img src="src/top-reader/reader-3.png">
+                </div>
+                <div class="reader-info">
+                    <p class="reader-name">Carolline</p>
+                </div>
+            </div>
         </div>
     </section>
+
 
     <!-- Feather Icons -->
     <script>
