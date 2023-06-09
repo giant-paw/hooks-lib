@@ -25,14 +25,17 @@ body {
 }
 
 .navbar-logo {
-    padding-left: 32px;
-    font-size: 1.7rem;
+    padding-left: 2px;
+    font-size: 1.8rem;
     font-weight: 700;
     color: #000;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-logo span {
     color: deeppink;
+    margin-left: 5px;
 }
 
 .navbar .navbar-nav a {
