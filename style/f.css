@@ -73,7 +73,7 @@ body {
 
 .banner .b-title h1{
     padding-top: 90px;
-    padding-left: 600px;
+    padding-left: 588px;
     color: white;
     font-size: 50px;
     
@@ -81,13 +81,14 @@ body {
 
 .banner .banner_btn {
     padding: 10px 70px;
+    margin: 0 17px;
     font-size: 30px;
     background: #ce5959;
     text-decoration: none;
     color: #fff;
     position: relative;
-    top: 18%;
-    left: 35%;
+    top: 10%;
+    left: 33%;
     border-radius: 20px;
 }
 

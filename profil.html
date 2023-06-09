@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+        rel="stylesheet" />
+    <!-- Custom CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            height: 100vh;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 1rem;
+            position: fixed;
+            background: #fff;
+            box-shadow: 0 0 10px #089da1;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+        .navbar-logo {
+            padding-left: 2px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo span {
+            color: deeppink;
+            margin-left: 5px;
+        }
+
+        .navbar .navbar-nav a {
+            font-family: sans-serif;
+            font-weight: 450;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            color: #000;
+            display: inline-block;
+        }
+
+        .navbar .navbar-nav a:hover {
+            color: #089da1;
+        }
+
+        .navbar .navbar-extra a {
+            color: #000;
+            margin: 0 0.5rem;
+            padding-right: 10px;
+        }
+
+        .navbar .navbar-extra a:hover {
+            color: #089da1;
+        }
+
+        .about {
+            width: 100%;
+            height: 700px;
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .about .about_image img {
+            width: 700px;
+        }
+
+        .about .about_tag h1 {
+            font-size: 50px;
+            position: relative;
+            bottom: 35px;
+        }
+
+        .about .about_tag p {
+            line-height: 22px;
+            width: 650px;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        .about .about_tag .about_btn {
+            padding: 10px 20px;
+            background: #089da1;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+            top: 50px;
+        }
+    </style>
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+            <img src="./src/profil/about1.png" alt="Logo" width="70" height="70">
+            Perpustakaan<span> Kaledoskop</span>
+        </a>
+
+        <div class="navbar-nav">
+            <a href="index.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="koleksi.html">Koleksi</a>
+            <a href="writers.html">Pemustaka</a>
+        </div>
+
+        <div class="navbar-extra">
+            <a href="search.html" id="search"><i data-feather="search"></i></a>
+            <a href="user.html" id="user"><i data-feather="user"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!--About-->
+
+    <div class="about">
+
+        <div class="about_image">
+            <img src="./src/profil/about1.png">
+        </div>
+        <div class="about_tag">
+            <h1>Perpustakaan Kaledoskop</h1>
+            <p>
+                Perpustakaan Kaledoskop adalah perpustakaan yang menyediakan beragam koleksi buku dan sumber informasi.
+                Mereka memiliki buku-buku dari berbagai genre dan topik, termasuk novel, sejarah, sains, dan seni.
+                Perpustakaan Kaledoskop juga mungkin menawarkan sumber daya digital seperti e-book dan jurnal
+                elektronik. Mereka berkomitmen untuk memenuhi kebutuhan pembaca dengan menyediakan akses luas terhadap
+                pengetahuan dan hiburan.
+            </p>
+            <a href="#" class="about_btn">Learn More</a>
+        </div>
+
+    </div>
+
+    <!-- Feather Icons -->
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+
+</html>
