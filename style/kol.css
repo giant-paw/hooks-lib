@@ -112,6 +112,7 @@ body {
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
+    margin-bottom: 80px;
 }
 
 .featured-books .featured-book-box {
@@ -172,4 +173,16 @@ body {
 
 .featured-books .featured-book-box .featured-book-card .featured-book-tag .f-btn:hover {
     border-color: #089da1;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #24262b;
+    padding: 14px 0;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
 }

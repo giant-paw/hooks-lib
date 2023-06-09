@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hooks</title>
-    <link rel="stylesheet" href="style/search.css">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,13 +16,143 @@
     <!-- Feather Icons -->
     <script src="https://unpkg.com/feather-icons"></script>
 
+    <style>
+        :root {
+            --primary: rgb(219, 130, 14);
+            --bg: #010101;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            outline: none;
+            border: none;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: var(--bg);
+            color: whitesmoke;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 1rem;
+            position: fixed;
+            background: #fff;
+            box-shadow: 0 0 10px #089da1;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 9999;
+        }
+
+        .navbar-logo {
+            padding-left: 2px;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar-logo span {
+            color: deeppink;
+            margin-left: 5px;
+        }
+
+        .navbar .navbar-nav a {
+            font-family: sans-serif;
+            font-weight: 450;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            color: #000;
+            display: inline-block;
+        }
+
+        .navbar .navbar-nav a:hover {
+            color: #089da1;
+        }
+
+        .navbar .navbar-extra a {
+            color: #000;
+            margin: 0 0.5rem;
+            padding-right: 10px;
+        }
+
+        .navbar .navbar-extra a:hover {
+            color: #089da1;
+        }
+
+        /* Container */
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            padding: 5%;
+            background-image: linear-gradient(rgba(46, 44, 44, 0.8),
+                    rgba(36, 34, 34, 0.8)),
+                url(../src/home/bg-1.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .search-bar {
+            width: 100%;
+            max-width: 700px;
+            background: rgba(255, 255, 255, 0.2);
+            display: flex;
+            align-items: center;
+            border-radius: 60px;
+            padding: 10px 20px;
+        }
+
+        .container .search-bar input {
+            background: transparent;
+            flex: 1;
+            border: 0;
+            padding: 16px 20px;
+            font-size: 20px;
+            outline: none;
+            color: #fff;
+        }
+
+        .container .search-bar i {
+            width: 25px;
+        }
+
+        .container .search-bar button {
+            border: 0;
+            border-radius: 39%;
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            cursor: pointer;
+        }
+
+        ::placeholder {
+            color: rgb(236, 230, 230);
+        }
+    </style>
+
 </head>
 
-  <body>
-    
+<body>
+
     <!-- Navbar -->
     <nav class="navbar">
-        <a href="index.html" class="navbar-logo">Hooks <span>Library</span></a>
+        <a href="index.html" class="navbar-logo">
+            <img src="./src/profil/about1.png" alt="Logo" width="70" height="70">
+            Perpustakaan<span> Kaledoskop</span>
+        </a>
 
         <div class="navbar-nav">
             <a href="index.html">Home</a>
@@ -41,17 +170,18 @@
 
     <!-- Search-bar -->
     <div class="container">
-      <form action="" class="search-bar">
-        <input type="text" placeholder="Search anything" />
-        <button type="submit"><i data-feather="search"></i></button>
-      </form>
+        <form action="" class="search-bar">
+            <input type="text" placeholder="Search anything" />
+            <button type="submit"><i data-feather="search"></i></button>
+        </form>
     </div>
 
     <script>
-      feather.replace();
+        feather.replace();
     </script>
 
     <!-- JS -->
     <script src="js/script.js"></script>
-  </body>
+</body>
+
 </html>
