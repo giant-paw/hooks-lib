@@ -112,51 +112,22 @@
         .hero-content p {
             font-size: 18px;
             line-height: 1.5;
-            margin-bottom: 2rem;
+            margin-bottom: 5rem;
         }
 
-        .card-container {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            margin-top: 20px;
+        .hero-content .h-btn .hero_btn {
+            padding: 20px 20px;
+            margin: 0 17px;
+            font-size: 16px;
+            background: #ce5959;
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            border-radius: 20px;
         }
 
-        .card {
-            width: 200px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
-            margin: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .card .card-image {
-            width: 150px;
-            height: 150px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            margin-bottom: 10px;
-            border-radius: 10px;
-        }
-
-        .card .card-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #000;
-            margin-top: 10px;
+        .hero-content .h-btn .hero_btn:hover {
+            background: #089da1;
         }
 
         .sect-title {
@@ -182,7 +153,7 @@
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             grid-gap: 25px 0;
         }
-        
+
         .arrivals .arrivals_box .arrivals_card {
             width: 250px;
             height: 340px;
@@ -303,6 +274,22 @@
             list-style: none;
         }
 
+        .social-media-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 100px;
+        }
+
+        .social-media-icon {
+            margin: 0 60px;
+            margin-bottom: 130px;
+        }
+
+        .social-media-icon img {
+            height: 160px;
+            width: 130px;
+        }
+
         .footer {
             background-color: #24262b;
             padding: 70px 0;
@@ -407,13 +394,25 @@
             <h1>Embrace the Joy of <span>Reading</span></h1>
             <p>Jelajahi dunia yang tak terbatas melalui halaman-halaman buku, temukan keindahan dan hikmah di dalamnya.
                 Biarkan imajinasi melayang bebas dan nikmati kegembiraan membaca yang tiada tara.</p>
+
+            <div class="h-btn">
+                <a href="#" class="hero_btn">Kartu Anggota</a>
+                <a href="#" class="hero_btn">Hubungi Kami</a>
+                <a href="#" class="hero_btn">Kotak Saran</a>
+            </div>
+        </div>
+
+        <div class="btn">
+
         </div>
     </section>
     <!-- Hero -->
 
     <section class="koleksi">
         <div class="sect-title">
-            <h1>Rekomendasi Buku</h1>
+            <h1>
+                Koleksi
+            </h1>
         </div>
 
         <div class="arrivals">
@@ -629,6 +628,21 @@
             </div>
         </div>
     </section>
+
+
+    <section class="social-comm">
+        <div class="reader-title">
+            <h1>Social Community</h1>
+        </div>
+        <div class="social-media-icons">
+            <a href="#" class="social-media-icon"><img src="src/home/insta-1.jpg" alt="Instagram"></a>
+            <a href="#" class="social-media-icon"><img src="src/home/facebook-2.jpg" alt="Facebook"></a>
+            <a href="#" class="social-media-icon"><img src="src/home/twitter-3.jpg" alt="Twitter"></a>
+            <a href="#" class="social-media-icon"><img src="src/home/tiktok-4.jpg" alt="TikTok"></a>
+            <a href="#" class="social-media-icon"><img src="src/home/youtube-5.jpg" alt="YouTube"></a>
+        </div>
+    </section>
+
 
     <footer class="footer">
         <div class="cont">

@@ -100,9 +100,11 @@
                 url(../src/home/bg-1.jpg);
             background-size: cover;
             background-position: center;
+            flex-direction: column;
             display: flex;
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
         .container .search-bar {
@@ -138,6 +140,11 @@
             cursor: pointer;
         }
 
+        .container h1 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+        }
+
         ::placeholder {
             color: rgb(236, 230, 230);
         }
@@ -170,6 +177,9 @@
 
     <!-- Search-bar -->
     <div class="container">
+
+        <h1>OPAC</h1>
+
         <form action="" class="search-bar">
             <input type="text" placeholder="Search anything" />
             <button type="submit"><i data-feather="search"></i></button>
